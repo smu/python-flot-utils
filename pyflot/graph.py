@@ -72,6 +72,7 @@ class Flot(object):
     def __init__(self):
         self._series = []
         self._options = {}
+        self.container = 'flotgraph'
 
         #apply any options specified starting with the top
         #of the inheritance chain
