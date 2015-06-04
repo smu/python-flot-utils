@@ -53,7 +53,7 @@ class DuplicateLabelException(Exception):
     label a new series with a label already in use"""
 
 
-LINE_TYPES = ('bars', 'line', 'points')
+LINE_TYPES = ('bars', 'lines', 'points')
 
 
 class Flot(object):
@@ -102,7 +102,7 @@ class Flot(object):
     def __getattr__(self, value):
         """
         add_bars
-        add_line
+        add_lines
         add_points
 
         provides shortcut methods for adding series using a particular line type
@@ -124,7 +124,7 @@ class Flot(object):
 
         Optional Args:
             bars
-            line
+            lines
             points - for each of these present as keyword arguments,
                      their value should be a dict representing the 
                      line type options relative to their type. 
